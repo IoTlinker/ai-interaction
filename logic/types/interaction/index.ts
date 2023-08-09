@@ -31,7 +31,7 @@ export interface createInteraction {
     };
   };
   query?: {
-    name: string;
+    name?: string;
   };
 }
 
@@ -81,9 +81,9 @@ export interface interaction {
 }
 
 export interface interactionWithoutRequire {
-  description: string;
-  name: string;
-  request: {
+  description?: string;
+  name?: string;
+  request?: {
     headers?: {
       /**
        * Unknown Property
@@ -108,7 +108,7 @@ export interface interactionWithoutRequire {
 }
 
 export interface param {
-  default: string;
+  default: any;
   description: string;
   required: boolean;
   type: string;
@@ -147,9 +147,9 @@ export interface request {
 
 export interface updateInteraction {
   body: {
-    description: string;
-    name: string;
-    request: {
+    description?: string;
+    name?: string;
+    request?: {
       headers?: {
         /**
          * Unknown Property

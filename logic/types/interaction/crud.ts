@@ -31,7 +31,7 @@ export interface createInteraction {
     };
   };
   query?: {
-    name: string;
+    name?: string;
   };
 }
 
@@ -55,9 +55,9 @@ export interface getInteractions {
 
 export interface updateInteraction {
   body: {
-    description: string;
-    name: string;
-    request: {
+    description?: string;
+    name?: string;
+    request?: {
       headers?: {
         /**
          * Unknown Property

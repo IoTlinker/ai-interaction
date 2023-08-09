@@ -31,9 +31,9 @@ export interface interaction {
 }
 
 export interface interactionWithoutRequire {
-  description: string;
-  name: string;
-  request: {
+  description?: string;
+  name?: string;
+  request?: {
     headers?: {
       /**
        * Unknown Property
@@ -58,7 +58,7 @@ export interface interactionWithoutRequire {
 }
 
 export interface param {
-  default: string;
+  default: any;
   description: string;
   required: boolean;
   type: string;

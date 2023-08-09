@@ -9,7 +9,7 @@ export class Param {
     public type!: string
 
     @prop({ required: true })
-    public default!: string
+    public default!: any
 
     @prop({ required: true })
     public required!: boolean
