@@ -1,7 +1,7 @@
 import { prop, modelOptions, getModelForClass } from '@typegoose/typegoose'
 
 @modelOptions({
-    schemaOptions: { collection: 'interaction', versionKey: false, _id: false },
+    schemaOptions: { collection: 'interaction', versionKey: false },
     options: { allowMixed: 0 }
 })
 export class Interaction {

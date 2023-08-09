@@ -1,7 +1,7 @@
-import { prop } from '@typegoose/typegoose'
-
+import { prop, modelOptions } from '@typegoose/typegoose'
 import { Param } from './param'
 
+@modelOptions({ schemaOptions: { _id: false }, options: { allowMixed: 0 } })
 export class Request {
     @prop({ required: true })
     public method!: string
