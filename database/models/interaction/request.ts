@@ -6,7 +6,7 @@ export class Request {
     @prop({ required: true })
     public method!: string
 
-    @prop({ required: true })
+    @prop({ required: true, regexp: /^https?:\/\/.+/ })
     public url!: string
 
     @prop({ required: false })
