@@ -1,4 +1,5 @@
 import { prop, modelOptions, getModelForClass } from '@typegoose/typegoose'
+import { Request } from './request'
 
 @modelOptions({
     schemaOptions: { collection: 'interaction', versionKey: false },
