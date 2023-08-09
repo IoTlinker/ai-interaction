@@ -3,7 +3,7 @@ import Joi from 'joi'
 import { param, request, query, queryAll, interaction, interactionWithoutRequire } from './common'
 
 export const createInteraction = Joi.object({
-    query: query,
+    query: queryAll,
     body: interaction.required()
 })
 
