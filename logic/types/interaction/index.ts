@@ -8,12 +8,6 @@ export interface createInteraction {
     description: string;
     name: string;
     request: {
-      headers?: {
-        /**
-         * Unknown Property
-         */
-        [x: string]: unknown;
-      };
       method: string;
       params?: {
         /**
@@ -57,12 +51,6 @@ export interface interaction {
   description: string;
   name: string;
   request: {
-    headers?: {
-      /**
-       * Unknown Property
-       */
-      [x: string]: unknown;
-    };
     method: string;
     params?: {
       /**
@@ -84,12 +72,6 @@ export interface interactionWithoutRequire {
   description?: string;
   name?: string;
   request?: {
-    headers?: {
-      /**
-       * Unknown Property
-       */
-      [x: string]: unknown;
-    };
     method: string;
     params?: {
       /**
@@ -123,12 +105,6 @@ export interface queryAll {
 }
 
 export interface request {
-  headers?: {
-    /**
-     * Unknown Property
-     */
-    [x: string]: unknown;
-  };
   method: string;
   params?: {
     /**
@@ -150,12 +126,6 @@ export interface updateInteraction {
     description?: string;
     name?: string;
     request?: {
-      headers?: {
-        /**
-         * Unknown Property
-         */
-        [x: string]: unknown;
-      };
       method: string;
       params?: {
         /**

@@ -12,7 +12,6 @@ export const request = Joi.object({
     url: Joi.string()
         .regex(/^https?:\/\/.+/)
         .required(),
-    headers: Joi.object().pattern(Joi.string(), param),
     query: Joi.object().pattern(Joi.string(), param),
     params: Joi.object().pattern(Joi.string(), param)
 })

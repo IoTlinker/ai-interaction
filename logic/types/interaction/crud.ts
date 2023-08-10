@@ -8,12 +8,6 @@ export interface createInteraction {
     description: string;
     name: string;
     request: {
-      headers?: {
-        /**
-         * Unknown Property
-         */
-        [x: string]: unknown;
-      };
       method: string;
       params?: {
         /**
@@ -58,12 +52,6 @@ export interface updateInteraction {
     description?: string;
     name?: string;
     request?: {
-      headers?: {
-        /**
-         * Unknown Property
-         */
-        [x: string]: unknown;
-      };
       method: string;
       params?: {
         /**
